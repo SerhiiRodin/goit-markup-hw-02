@@ -43,7 +43,17 @@ a {
 header .logo span {
   color: var(--main-color-titel);
 }
-/* Если .header .link-list-item то hover не работает */
+/* .header .link-list-item { 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-color-titel);
+}
+то hover не работает */
+
 .link-list-item {
   font-family: 'Roboto';
   font-style: normal;
@@ -90,7 +100,7 @@ header .logo span {
 }
 
 .button:hover {
-    background: var(--color-activ-button);
+  background: var(--color-activ-button);
 }
 
 .characteristics h3 {
