@@ -35,7 +35,7 @@ body {
   color: var(--color-blue);
 }
 
-.logo span {
+.logo>span {
   color: var(--main-color-titel);
 }
 
@@ -46,6 +46,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color-titel);
+}
+
+.header-item.current {
+    color: var(--color-blue);
 }
 
 .header-item:hover,
@@ -168,16 +172,7 @@ body {
   background: var(--color-background-heroes);
 }
 
-.footer .logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-}
-
-.footer .logo span {
+ .logo.footer>span {
   color: var(--color-white);
 }
 
