@@ -6,6 +6,7 @@
   --color-activ-button: #188ce8;
   --color-background-heroes: #2f303a;
   --color-background-our-team: #f5f4fa;
+  --color-border: #eeeeee;
 }
 
 body {
@@ -16,172 +17,162 @@ body {
   background-color: var(--color-white);
 }
 
-a {
+.link {
   text-decoration: none;
-  color: var(--main-color-titel);
 }
 
-.link-list-item:hover,
-.link-list-item:focus,
-.adress-list-item:hover,
-.adress-list-item:focus,
-.link-footer-list-item:hover,
-.link-footer-list-item:focus {
-  color: var(--color-blue);
+.list {
+  list-style: none;
 }
 
-.header .logo {
+/* HEADER */
+.logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-blue);
 }
 
-header .logo span {
+.logo span {
   color: var(--main-color-titel);
 }
-/* .header .link-list-item { 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: var(--main-color-titel);
-}
-то hover не работает */
 
-.link-list-item {
+.header-item {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color-titel);
 }
 
-.adress-list-item {
+.header-item:hover,
+.header-item:focus {
+  color: var(--color-blue);
+}
+
+.adress-item {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color-text);
 }
-*/ .heroes {
-  background-color: var(--color-background-heroes);
 
+.adress-item:hover,
+.adress-item:focus {
+  color: var(--color-blue);
+}
+
+/* Heroes */
+.heroes {
+  background-color: var(--color-background-heroes);
+}
+
+.heroes-titel {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
 }
 
-.button {
+.heroes-button {
   background: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--color-white);
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
+  cursor: pointer;
 }
 
-.button:hover {
+.heroes-button:hover {
   background: var(--color-activ-button);
 }
 
-.characteristics h3 {
+/* Feature */
+.feature-titel {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-color-titel);
 }
 
-.characteristics p {
+.feature-text {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-color-text);
 }
 
-.activities h2 {
+/* Activities */
+.activities-titel {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-titel);
 }
 
-.our-team {
+/* Our team */
+.team {
   background-color: var(--color-background-our-team);
 }
 
-.our-team h2 {
+.team-titel {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color-titel);
 }
 
-.our-team h3 {
+.team-undertitel {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  /* text-align: center; */
-  letter-spacing: 0.03logoem;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
   color: var(--main-color-titel);
 }
 
-.our-team p {
+.team-text {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  /* text-align: center; */
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+/* Footer */
 .footer {
   background: var(--color-background-heroes);
 }
 
 .footer .logo {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -190,12 +181,64 @@ header .logo span {
   color: var(--color-white);
 }
 
-.link-footer-list-item {
+.footer-link {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--color-white);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--color-blue);
+}
+
+/*------------------------------------------- Project */
+
+.project-button {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-titel);
+  cursor: pointer;
+
+  background: var(--color-background-our-team);
+  border: none;
+  border-radius: 4px;
+}
+
+.project-button:hover {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
+.project-titel {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color-titel);
+}
+
+.project-text {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+
+.item-project {
+  border: 1px solid var(--color-border);
+}
+/* не работает */
+.item-project:hover {
+  color: var(--color-blue);
 }
